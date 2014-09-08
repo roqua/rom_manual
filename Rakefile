@@ -10,7 +10,7 @@ end
 
 desc "Test the output"
 task :test => [:clean, :compile] do
-  HTML::Proofer.new("./output").run
+  HTML::Proofer.new("./output", alt_ignore: [/screenshots/]).run
 end
 
 # Prompt user for a commit message; default: P U B L I S H :emoji:

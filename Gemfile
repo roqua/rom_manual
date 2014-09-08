@@ -20,7 +20,7 @@ group :development do
 end
 
 group :test do
-  gem 'html-proofer', '~> 0.6.0'
+  gem 'html-proofer', '~> 1.3.0'
 end
 
 gem 'pry'
