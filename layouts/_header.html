@@ -1,0 +1,13 @@
+<div id="header-wrapper">
+  <div id="header">
+    <div>
+      <a class="logo" href="/rom_manual/">RoQua Handleiding</a>
+      <ul class="nav">
+        <%= nav_link @items.find { |i| i.identifier == '/rom_manual/' } %>
+        <%= nav_link @items.find { |i| i.identifier == '/rom_manual/epd/' } %>
+        <%= nav_link @items.find { |i| i.identifier == '/rom_manual/admin/' } %>
+        <li><a href="http://roqua.nl/contact">Support</a></li>
+      </ul>
+    </div>
+  </div><!-- #header -->
+</div><!-- #header-wrapper -->

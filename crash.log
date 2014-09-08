@@ -1,0 +1,317 @@
+Crashlog created at 2014-09-08 15:47:41 +0200
+
+=== MESSAGE:
+
+NoMethodError: undefined method `[]' for nil:NilClass
+
+=== COMPILATION STACK:
+
+  - [item]   /manual/core/authentication/http_basic/ (rep default)
+
+=== BACKTRACE:
+
+  0. lib/helpers/nav_link.rb:9:in `nav_link'
+  1. lib/helpers/nav_link.rb:71:in `nav_link'
+  2. layout /_header/:6:in `get_binding'
+  3. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `eval'
+  4. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `result'
+  5. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/filters/erb.rb:34:in `run'
+  6. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/helpers/rendering.rb:120:in `render'
+  7. layout /default/:14:in `get_binding'
+  8. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `eval'
+  9. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0/erb.rb:850:in `result'
+  10. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/filters/erb.rb:34:in `run'
+  11. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/result_data/item_rep.rb:413:in `layout'
+  12. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/item_rep_proxy.rb:69:in `layout'
+  13. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/rule_context.rb:68:in `layout'
+  14. ./Rules:29:in `block in load'
+  15. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/rule.rb:68:in `instance_eval'
+  16. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/rule.rb:68:in `apply_to'
+  17. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/compiler.rb:383:in `compile_rep'
+  18. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/compiler.rb:339:in `block in compile_reps'
+  19. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/compiler.rb:332:in `loop'
+  20. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/compiler.rb:332:in `compile_reps'
+  21. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/compilation/compiler.rb:89:in `run'
+  22. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/base/source_data/site.rb:58:in `compile'
+  23. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/commands/compile.rb:62:in `run'
+  24. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/command_runner.rb:14:in `block in call'
+  25. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  26. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  27. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/command_runner.rb:13:in `call'
+  28. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib/cri/command_dsl.rb:185:in `block in runner'
+  29. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib/cri/command.rb:298:in `call'
+  30. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib/cri/command.rb:298:in `run_this'
+  31. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib/cri/command.rb:251:in `run'
+  32. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib/cri/command.rb:264:in `run'
+  33. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli.rb:52:in `block in run'
+  34. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:63:in `handle_while'
+  35. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli/error_handler.rb:26:in `handle_while'
+  36. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib/nanoc/cli.rb:50:in `run'
+  37. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/bin/nanoc:19:in `<top (required)>'
+  38. /Users/marten/.gem/ruby/2.1.1/bin/nanoc:23:in `load'
+  39. /Users/marten/.gem/ruby/2.1.1/bin/nanoc:23:in `<main>'
+
+=== VERSION INFORMATION:
+
+nanoc 3.4.3 © 2007-2012 Denis Defreyne.
+Running ruby 2.1.1 (2014-02-24) on x86_64-darwin13.0 with RubyGems 2.2.2.
+
+=== SYSTEM INFORMATION:
+
+Darwin marten.rgoc.rug.nl 13.3.0 Darwin Kernel Version 13.3.0: Tue Jun  3 21:27:35 PDT 2014; root:xnu-2422.110.17~1/RELEASE_X86_64 x86_64
+
+=== INSTALLED GEMS:
+
+  adsf 1.2.0
+  blankslate 3.1.2
+  builder 3.2.2
+  bundler 1.7.2
+  celluloid 0.15.2
+  coderay 1.1.0
+  colored 1.2
+  cri 2.4.1
+  daemons 1.1.9
+  ethon 0.6.2
+  eventmachine 1.0.3
+  ffi 1.9.3
+  formatador 0.2.5
+  fssm 0.2.10
+  guard 2.6.1
+  guard-nanoc 1.0.0
+  guard-process 1.0.6
+  html-proofer 0.6.0
+  kramdown 1.3.3
+  listen 2.7.9
+  lumberjack 1.0.9
+  mercenary 0.2.1
+  method_source 0.8.2
+  mime-types 1.25.1
+  mini_portile 0.5.2
+  nanoc 3.4.3
+  nokogiri 1.6.1
+  pry 0.10.0
+  pygments.rb 0.2.3
+  rack 1.5.2
+  rake 0.9.6
+  rb-fsevent 0.9.4
+  rb-inotify 0.9.5
+  rubypython 0.6.3
+  slop 3.5.0
+  spoon 0.0.4
+  thin 1.6.1
+  thor 0.19.1
+  timers 1.1.0
+  typhoeus 0.6.7
+  yajl-ruby 0.8.3
+
+=== ENVIRONMENT:
+
+AUTOJUMP_DATA_DIR => "/Users/marten/.local/share/autojump"
+Apple_PubSub_Socket_Render => "/tmp/launch-6UWC9T/Render"
+BUNDLE_BIN_PATH => "/Users/marten/.gem/ruby/2.1.1/gems/bundler-1.7.2/bin/bundle"
+BUNDLE_GEMFILE => "/Users/marten/roqua/docs/manual/Gemfile"
+COLORFGBG => "7;0"
+COMMAND_MODE => "unix2003"
+DISPLAY => "/tmp/launch-7Tlo2U/org.macosforge.xquartz:0"
+EDITOR => "vim"
+GEM_HOME => "/Users/marten/.gem/ruby/2.1.1"
+GEM_PATH => "/Users/marten/.gem/ruby/2.1.1:/Users/marten/.rubies/ruby-2.1.1/lib/ruby/gems/2.1.0"
+GEM_ROOT => "/Users/marten/.rubies/ruby-2.1.1/lib/ruby/gems/2.1.0"
+GEOLOQI_TOKEN => "6d67-6079eaaa6955cb62838be656e36cd00398d7ec55"
+GREP_COLOR => "1;32"
+GREP_OPTIONS => "--color=auto"
+HOME => "/Users/marten"
+ITERM_PROFILE => "Default"
+ITERM_SESSION_ID => "w1t3p0"
+LC_CTYPE => ""
+LOGNAME => "marten"
+LSCOLORS => "Gxfxcxdxbxegedabagacad"
+MAKEFLAGS => "-j8"
+MANPATH => "/Users/marten/.gem/ruby/2.1.1/gems/kramdown-1.3.3/man"
+OLDPWD => "/Users/marten/roqua/docs"
+PAGER => "less"
+PATH => "/Users/marten/.gem/ruby/2.1.1/bin:/Users/marten/.rubies/ruby-2.1.1/lib/ruby/gems/2.1.0/bin:/Users/marten/.rubies/ruby-2.1.1/bin:/Users/marten/bin:/Users/marten/.cask/bin:/opt/vagrant/bin:/var/lib/gems/1.8/bin:/usr/local/git/bin:/usr/local/mysql/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/share/npm/bin:/usr/local/share/python:/usr/local/Cellar/macvim/7.3-64/MacVim.app/Contents/MacOS:/opt/X11/bin:/usr/texbin:/Users/marten/.rbenv/bin:/Users/marten/.rbenv/shims"
+PKG_CONFIG_PATH => "/usr/local/lib/pkgconfig:"
+PROJECTS => "/Users/marten/prj"
+PWD => "/Users/marten/roqua/docs/manual"
+RAILS_LOG_LEVEL => "debug"
+ROQUA_ROOT => "/Users/marten/rgoc/roqua-deployer"
+RUBYLIB => "/Users/marten/.gem/ruby/2.1.1/gems/bundler-1.7.2/lib"
+RUBYOPT => "-rbundler/setup "
+RUBY_ENGINE => "ruby"
+RUBY_ROOT => "/Users/marten/.rubies/ruby-2.1.1"
+RUBY_VERSION => "2.1.1"
+SECURITYSESSIONID => "186a6"
+SHELL => "/bin/zsh"
+SHLVL => "1"
+SSH_AUTH_SOCK => "/tmp/launch-71uY72/Listeners"
+TERM => "xterm-256color"
+TERM_PROGRAM => "iTerm.app"
+TMPDIR => "/var/folders/_g/79dkgycj1qvc1ls9mt90hymc0000gn/T/"
+USER => "marten"
+ZSH => "/Users/marten/dotfiles"
+_ => "/Users/marten/.gem/ruby/2.1.1/bin/rake"
+_ORIGINAL_GEM_PATH => "/Users/marten/.gem/ruby/2.1.1:/Users/marten/.rubies/ruby-2.1.1/lib/ruby/gems/2.1.0"
+__CF_USER_TEXT_ENCODING => "0x1F5:0:0"
+__CHECKFIX1436934 => "1"
+
+=== GEMFILE.LOCK:
+
+GEM
+  remote: http://rubygems.org/
+  specs:
+    adsf (1.2.0)
+      rack (>= 1.0.0)
+    blankslate (3.1.2)
+    builder (3.2.2)
+    celluloid (0.15.2)
+      timers (~> 1.1.0)
+    coderay (1.1.0)
+    colored (1.2)
+    cri (2.4.1)
+      colored (>= 1.2)
+    daemons (1.1.9)
+    ethon (0.6.2)
+      ffi (>= 1.3.0)
+      mime-types (~> 1.18)
+    eventmachine (1.0.3)
+    ffi (1.9.3)
+    formatador (0.2.5)
+    fssm (0.2.10)
+    guard (2.6.1)
+      formatador (>= 0.2.4)
+      listen (~> 2.7)
+      lumberjack (~> 1.0)
+      pry (>= 0.9.12)
+      thor (>= 0.18.1)
+    guard-nanoc (1.0.0)
+    guard-process (1.0.6)
+      guard (>= 0.4.2)
+      spoon (~> 0.0.1)
+    html-proofer (0.6.0)
+      colored (~> 1.2)
+      mercenary (~> 0.2.0)
+      nokogiri (~> 1.6.0)
+      typhoeus (~> 0.6.7)
+    kramdown (1.3.3)
+    listen (2.7.9)
+      celluloid (>= 0.15.2)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+    lumberjack (1.0.9)
+    mercenary (0.2.1)
+    method_source (0.8.2)
+    mime-types (1.25.1)
+    mini_portile (0.5.2)
+    nanoc (3.4.3)
+      cri (~> 2.2)
+    nokogiri (1.6.1)
+      mini_portile (~> 0.5.0)
+    pry (0.10.0)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pygments.rb (0.2.3)
+      rubypython (>= 0.5.1)
+    rack (1.5.2)
+    rake (0.9.6)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rubypython (0.6.3)
+      blankslate (>= 2.1.2.3)
+      ffi (>= 1.0.7)
+    slop (3.5.0)
+    spoon (0.0.4)
+      ffi
+    thin (1.6.1)
+      daemons (>= 1.0.9)
+      eventmachine (>= 1.0.0)
+      rack (>= 1.0.0)
+    thor (0.19.1)
+    timers (1.1.0)
+    typhoeus (0.6.7)
+      ethon (~> 0.6.2)
+    yajl-ruby (0.8.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  adsf
+  builder
+  coderay
+  fssm
+  guard
+  guard-nanoc
+  guard-process
+  html-proofer (~> 0.6.0)
+  kramdown (~> 1.3.3)
+  mime-types (~> 1.16)
+  nanoc (~> 3.4.3)
+  nokogiri (~> 1.6.0)
+  pry
+  pygments.rb
+  rake (~> 0.9.2)
+  thin
+  yajl-ruby (~> 0.8.2)
+
+=== $LOAD_PATH:
+
+  0. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib
+  1. /Users/marten/.gem/ruby/2.1.1/extensions/x86_64-darwin-13/2.1.0-static/yajl-ruby-0.8.3
+  2. /Users/marten/.gem/ruby/2.1.1/gems/yajl-ruby-0.8.3/lib
+  3. /Users/marten/.gem/ruby/2.1.1/gems/yajl-ruby-0.8.3/ext
+  4. /Users/marten/.gem/ruby/2.1.1/extensions/x86_64-darwin-13/2.1.0-static/thin-1.6.1
+  5. /Users/marten/.gem/ruby/2.1.1/gems/thin-1.6.1/lib
+  6. /Users/marten/.gem/ruby/2.1.1/gems/pygments.rb-0.2.3/lib
+  7. /Users/marten/.gem/ruby/2.1.1/gems/rubypython-0.6.3/lib
+  8. /Users/marten/.gem/ruby/2.1.1/gems/nanoc-3.4.3/lib
+  9. /Users/marten/.gem/ruby/2.1.1/gems/kramdown-1.3.3/lib
+  10. /Users/marten/.gem/ruby/2.1.1/gems/html-proofer-0.6.0/lib
+  11. /Users/marten/.gem/ruby/2.1.1/gems/typhoeus-0.6.7/lib
+  12. /Users/marten/.gem/ruby/2.1.1/extensions/x86_64-darwin-13/2.1.0-static/nokogiri-1.6.1
+  13. /Users/marten/.gem/ruby/2.1.1/gems/nokogiri-1.6.1/lib
+  14. /Users/marten/.gem/ruby/2.1.1/gems/mini_portile-0.5.2/lib
+  15. /Users/marten/.gem/ruby/2.1.1/gems/mercenary-0.2.1/lib
+  16. /Users/marten/.gem/ruby/2.1.1/gems/guard-process-1.0.6/lib
+  17. /Users/marten/.gem/ruby/2.1.1/gems/spoon-0.0.4/lib
+  18. /Users/marten/.gem/ruby/2.1.1/gems/guard-nanoc-1.0.0/lib
+  19. /Users/marten/.gem/ruby/2.1.1/gems/guard-2.6.1/lib
+  20. /Users/marten/.gem/ruby/2.1.1/gems/thor-0.19.1/lib
+  21. /Users/marten/.gem/ruby/2.1.1/gems/pry-0.10.0/lib
+  22. /Users/marten/.gem/ruby/2.1.1/gems/slop-3.5.0/lib
+  23. /Users/marten/.gem/ruby/2.1.1/gems/method_source-0.8.2/lib
+  24. /Users/marten/.gem/ruby/2.1.1/gems/lumberjack-1.0.9/lib
+  25. /Users/marten/.gem/ruby/2.1.1/gems/listen-2.7.9/lib
+  26. /Users/marten/.gem/ruby/2.1.1/gems/rb-inotify-0.9.5/lib
+  27. /Users/marten/.gem/ruby/2.1.1/gems/rb-fsevent-0.9.4/lib
+  28. /Users/marten/.gem/ruby/2.1.1/gems/fssm-0.2.10/lib
+  29. /Users/marten/.gem/ruby/2.1.1/gems/formatador-0.2.5/lib
+  30. /Users/marten/.gem/ruby/2.1.1/extensions/x86_64-darwin-13/2.1.0-static/eventmachine-1.0.3
+  31. /Users/marten/.gem/ruby/2.1.1/gems/eventmachine-1.0.3/lib
+  32. /Users/marten/.gem/ruby/2.1.1/gems/ethon-0.6.2/lib
+  33. /Users/marten/.gem/ruby/2.1.1/gems/mime-types-1.25.1/lib
+  34. /Users/marten/.gem/ruby/2.1.1/extensions/x86_64-darwin-13/2.1.0-static/ffi-1.9.3
+  35. /Users/marten/.gem/ruby/2.1.1/gems/ffi-1.9.3/lib
+  36. /Users/marten/.gem/ruby/2.1.1/gems/ffi-1.9.3/ext/ffi_c
+  37. /Users/marten/.gem/ruby/2.1.1/gems/daemons-1.1.9/lib
+  38. /Users/marten/.gem/ruby/2.1.1/gems/cri-2.4.1/lib
+  39. /Users/marten/.gem/ruby/2.1.1/gems/colored-1.2/lib
+  40. /Users/marten/.gem/ruby/2.1.1/gems/coderay-1.1.0/lib
+  41. /Users/marten/.gem/ruby/2.1.1/gems/celluloid-0.15.2/lib
+  42. /Users/marten/.gem/ruby/2.1.1/gems/timers-1.1.0/lib
+  43. /Users/marten/.gem/ruby/2.1.1/gems/builder-3.2.2/lib
+  44. /Users/marten/.gem/ruby/2.1.1/gems/blankslate-3.1.2/lib
+  45. /Users/marten/.gem/ruby/2.1.1/gems/adsf-1.2.0/lib
+  46. /Users/marten/.gem/ruby/2.1.1/gems/rack-1.5.2/lib
+  47. /Users/marten/.gem/ruby/2.1.1/gems/rake-0.9.6/lib
+  48. /Users/marten/.gem/ruby/2.1.1/gems/bundler-1.7.2/lib
+  49. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0
+  50. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/site_ruby/2.1.0/x86_64-darwin13.0
+  51. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/site_ruby
+  52. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0
+  53. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/vendor_ruby/2.1.0/x86_64-darwin13.0
+  54. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/vendor_ruby
+  55. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0
+  56. /Users/marten/.rubies/ruby-2.1.1/lib/ruby/2.1.0/x86_64-darwin13.0
