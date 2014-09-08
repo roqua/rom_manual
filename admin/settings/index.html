@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="Content-Language" content="en-us" />
+  <meta http-equiv="imagetoolbar" content="false" />
+  <meta name="MSSmartTagsPreventParsing" content="true" />
+  <title>Instellingen | RoQua Developer Docs</title>
+  <link href="/rom_manual/assets/css/reset.css" rel="stylesheet" type="text/css" />
+  <link href="/rom_manual/assets/css/960.css" rel="stylesheet" type="text/css" />
+  <link href="/rom_manual/assets/css/uv_active4d.css" rel="stylesheet" type="text/css" />
+  <link href="/rom_manual/assets/css/documentation.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="/rom_manual/assets/css/pygments.css" media="screen" rel="stylesheet" type="text/css">
+  <script src="/rom_manual/assets/js/jquery.js" type="text/javascript"></script>
+  <script src="/rom_manual/assets/js/documentation.js" type="text/javascript"></script>
+</head>
+
+
+
+
+
+<body class="rom">
+  <div id="header-wrapper">
+  <div id="header">
+    <div>
+      <a class="logo" href="/rom_manual/">RoQua Handleiding</a>
+      <ul class="nav">
+        <li class="home"><a href="/rom_manual/">Overzicht</a></li>
+        <li><a href="/rom_manual/epd/">EPD</a></li>
+        <li class="active"><a href="/rom_manual/admin/">Admin</a></li>
+        <li><a href="http://roqua.nl/contact">Support</a></li>
+      </ul>
+    </div>
+  </div><!-- #header -->
+</div><!-- #header-wrapper -->
+
+
+  <div class="sub-nav">
+    <h2>
+      <strong>Admin</strong>
+      : Instellingen
+      <span class="status status-draft">
+          draft
+          </span>
+    </h2>
+  </div>
+
+  <div id="wrapper">
+    <div class="content">
+      <p>Hier kun je enkele instellingen maken voor de RoQua-applicatie zoals de weergave van een link naar de handleiding in de RoQua interface en of behandelaren gevraagd zullen worden om hun persoonlijke gegevens als zij voor het eerst van RoQua gebruik maken. Verder kun je opgeven na welke periode klaarstaande vragenlijsten een rood label krijgen en welk exportformaat gebruikt wordt voor het verzenden van ORU-berichten.</p>
+
+<h2 id="actieve-functies">Actieve functies</h2>
+
+<div style="height: 230px; overflow: hidden">
+  <img src="/rom_manual/assets/images/screenshots/instellingen.png">
+</div>
+
+<ul>
+<li>
+<strong>Invulperiode</strong> geeft aan na hoeveel tijd de labels van klaarstaande vragenlijsten rood zullen worden. Dit is ter attentie voor medewerkers, maar hangen verder geen consequenties aan.</li>
+  <li>
+<strong>Cache-tijd NAW</strong> geeft aan hoe lang RoQua de NAW-gegevens die worden opgehaald via een A19-koppeling zelf bewaart. Gegevens die we altijd behouden zijn postcode, geboortedatum en geslacht (voor onderzoek), en mobiele telefoonnummer en e-mailadres (voor automatische protocollen).</li>
+</ul><h2 id="migreren-oru-koppeling">Migreren ORU-koppeling</h2>
+
+<p>Voer de volgende stappen uit voor het migreren van de ORU-koppeling naar het meest recente exportformaat:</p>
+
+<ol>
+<li>
+    Selecteer op de RoQua <strong>acceptatieomgeving</strong> het meest recente exportformaat als ORU-versie.
+    <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
+      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png">
+</div>
+  </li>
+  <li>Controleer of dit exportformaat ook op de RoQua productieomgeving bestaat door de sleutel te vergelijken (het rijtje tekens tussen haakjes). Wanneer het formaat niet op productie bestaat, kies je een oudere versie die wel op acceptatie én productie bestaat.</li>
+  <li>Klik op "Instellingen opslaan" op de RoQua <strong>acceptatieomgeving</strong>.</li>
+  <li>
+    Klik vervolgens op de "Genereer schema" knop om voor alle vragenlijsten een leeg ORU-bericht te   verzenden.
+    <div style="height: 85px; overflow: hidden; border: 1px solid #ddd">
+      <img style="margin-top: -340px" src="/rom_manual/assets/images/screenshots/instellingen.png">
+</div>
+  </li>
+  <li>Gebruik de verzonden ORU-berichten om de database schema's bij te werken op de communicatieserver van je organisatie.</li>
+  <li>Controleer of de schema-wijzigingen succesvol zijn doorgevoerd door nogmaals voor alle vragenlijsten lege ORU-berichten te verzenden.</li>
+  <li>
+    Selecteer op de RoQua <strong>productieomgeving</strong> het exportformaat met dezelfde sleutel (het rijtje tekens tussen haakjes) als het formaat wat geselecteerd is op de acceptatieomgeving en klik op "Instellingen opslaan".
+    <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
+      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png">
+</div>
+  </li>
+</ol><p>De ORU-koppeling is succesvol gemigreerd!</p>
+    </div>
+
+    <div id="js-sidebar" class="sidebar-shell">
+      <div class="js-toggle-list sidebar-module expandable">
+        <ul>
+          
+            
+              <li>
+                <h3><a href="/rom_manual/admin/overview/">Overzicht</a></h3>
+              </li>
+            
+          
+            
+              <li class="js-topic">
+                <h3>
+                  <a href="#" class="js-expand-btn collapsed arrow-btn" data-proofer-ignore></a>
+                  <a href="/rom_manual/admin/rom_config/">ROM-config</a>
+                </h3>
+                <ul class="js-guides">
+                  
+                    <li><a href="/rom_manual/admin/rom_config/invitation_templates/">Uitnodigingstemplates</a></li>
+                  
+                    <li><a href="/rom_manual/admin/rom_config/report_templates/">Rapporttemplates</a></li>
+                  
+                    <li><a href="/rom_manual/admin/rom_config/questionnaires/">Vragenlijstenoverzicht</a></li>
+                  
+                </ul>
+              </li>
+            
+          
+            
+              <li>
+                <h3><a href="/rom_manual/admin/data_exports/">Data Exports</a></h3>
+              </li>
+            
+          
+            
+              <li>
+                <h3><a href="/rom_manual/admin/settings/">Instellingen</a></h3>
+              </li>
+            
+          
+            
+              <li>
+                <h3><a href="/rom_manual/admin/users/">Gebruikers</a></h3>
+              </li>
+            
+          
+        </ul>
+      </div> <!-- /sidebar-module -->
+      <div class="sidebar-module notice">
+        <p>This website is a <a href="https://github.com/roqua/playbook" target="_blank">private GitHub repository</a>. You can edit content over there.</p>
+      </div>
+    </div><!-- /sidebar-shell -->
+  </div><!-- #wrapper -->
+
+  	<div id="footer" >
+    <div class="lower_footer">
+      <ul class="footer-cell">
+      </ul>
+
+      <span class="footer-cell">
+      </span>
+
+      <ul class="footer-cell">
+        <li><a href="http://roqua.nl/contact">Contact</a></li>
+        <li><a href="https://roqua.zendesk.com">Status</a></li>
+        <li><a href="https://roqua.zendesk.com/forums/20271351-Announcements">Release News</a></li>
+      </ul>
+    </div>
+
+		<div class="wrapper">
+			<p>Design &copy; <span class="js-year">2014</span> RoQua. All rights reserved. Except where otherwise noted, content on this site is licensed under a <a href="http://creativecommons.org/licenses/by/3.0/us/">Creative Commons CC-BY license</a>.<br>Many thanks to <a href="https://developer.github.com/">GitHub</a> for providing a CC-BY licenced repository for us to use and adapt.</p>
+		</div>
+
+  </div><!-- /#footer -->
+
+</body>
+</html>
