@@ -1,0 +1,21 @@
+general:
+  branches:
+    ignore:
+      - gh-pages
+machine:
+  ruby:
+    version: 2.1.0
+dependencies:
+  pre:
+    - git config user.email "circleci@roqua.nl"
+    - git config user.name "CircleCI"
+
+test:
+  override:
+    - bundle exec rake test
+    - bundle exec rake validate:links:internal
+deployment:
+  production:
+    branch: master
+    commands:
+      - bundle exec rake publish
