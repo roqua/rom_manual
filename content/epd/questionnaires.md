@@ -23,13 +23,13 @@ Er verschijnt een pagina met tabs voor elk type respondent. Om vragenlijsten kla
 
 De klaargezette vragenlijsten verschijnen in een overzicht bovenaan de timeline.
 
+<img src="/rom_manual/assets/images/screenshots/dossier_quests4.png" />
+
 <ul class="hints">
   <li> Klik op de inlogcode bij de set van klaargezette vragenlijsten om deze meteen in te vullen. Dit kan handig zijn wanneer een respondent vragenlijsten samen met de behandelaar wenst in te vullen.</li>
   <li> Verwijder een klaarstaande vragenlijst door op het kruisje te klikken naast de naam van deze vragenlijst.</li>
   <li> Verwijder in één keer alle klaarstaande vragenlijsten door rechts op de knop "Verwijder Alle" te klikken.</li>
 </ul>
-
-<img src="/rom_manual/assets/images/screenshots/dossier_quests4.png" />
 
 Wanneer een vragenlijst binnen een bepaalde tijdbestek niet ingevuld is, wordt deze vragenlijst met een rood label gemarkeerd.
 
