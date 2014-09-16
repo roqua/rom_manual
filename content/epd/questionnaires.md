@@ -31,7 +31,7 @@ De klaargezette vragenlijsten verschijnen in een overzicht bovenaan de timeline.
 
 <img src="/rom_manual/assets/images/screenshots/dossier_quests4.png" />
 
-Wanneer een vragenlijst binnen een bepaalde tijdbestek niet ingevuld is, wordt dit vragenlijst met een rood label gemarkeerd.
+Wanneer een vragenlijst binnen een bepaalde tijdbestek niet ingevuld is, wordt deze vragenlijst met een rood label gemarkeerd.
 
 <img src="/rom_manual/assets/images/screenshots/dossier_quests4a.png" />
 
