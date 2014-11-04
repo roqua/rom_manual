@@ -20,5 +20,5 @@ Je kunt nu de persoonlijke gegevens bijwerken, een nieuw wachtwoord instellen of
 
 Medewerkers die via de RoQua admin interface de "Coördinator" rol gekregen hebben krijgen in de RoQua EPD-interface toegang tot extra functionaliteit. Zo kunnen deze medewerkers ingevulde vragenlijsten verwijderen door op het rode icoontje met het prullenbakje te klikken rechtsboven in het scherm. Ze kunnen eerder door de patiënt ingevulde vragenlijsten ook bijwerken door op de knop "Antwoorden Aanpassen" te klikken. Dit kan handig zijn wanneer een patiënt aangeeft de lijst verkeerd te hebben ingevuld.
 
-<img src="/rom_manual/assets/images/screenshots/dossier_answers_edit1.png" />
+<img src="/rom_manual/assets/images/screenshots/dossier_answers_edit2.png" />
 
