@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Vragenlijstenoverzicht | RoQua Developer Docs</title>
+  <title>Protocollen | RoQua Developer Docs</title>
   <link href="/rom_manual/assets/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -39,7 +39,7 @@
   <div class="sub-nav">
     <h2>
       <strong>Admin</strong>
-      : Vragenlijstenoverzicht
+      : Protocollen
       <span class="status status-draft">
           draft
           </span>
@@ -48,9 +48,21 @@
 
   <div id="wrapper">
     <div class="content">
-      <p>Op deze pagina is een overzicht te vinden van alle vragenlijsten die binnen RoQua geïmplementeerd zijn. Ook is hier te vinden of een vragenlijst een licentie vereist of dat het vrij te gebruiken is. Dit overzicht houdt geen rekening met speciale regelingen die u mogelijk heeft getroffen met de rechtenhouders van gelicenceerde vragenlijsten.</p>
+      <h2 id="metingen">Metingen</h2>
 
-<!-- No screenshot, would be really empty unless we do some trick that allows us to seed all questionnaires during the spec run. -->
+<h3 id="fixedquestionnaires">fixed_questionnaires</h3>
+
+<p>RoQua heeft de mogelijkheid om vragenlijsten binnen een meting standaard aangevinkt te maken.</p>
+
+<h3 id="tijdspanne">Tijdspanne</h3>
+
+<p>Bij elke vragenlijst van een protocol kan een tijdspanne worden ingesteld. Deze tijdspanne wordt gebruikt om te bepalen of een lijst nog recent genoeg is ingevuld om niet nog een keer te hoeven worden afgenomen.</p>
+
+<p><img src="/rom_manual/assets/images/screenshots/admin_recently_answered_questionnaires_timespan.png"></p>
+
+<p>Het effect van deze instelling is dat wanneer een medewerker een lijst gaat klaarzetten, en deze lijst is nog in bijvoorbeeld de afgelopen 3 weken ingevuld, dan wordt deze lijst los van de rest weergegeven. Recent ingevulde vragenlijsten zijn nooit standaard aangevinkt.</p>
+
+<p><img src="/rom_manual/assets/images/screenshots/epd_recently_answered_fixed_questionnaires.png"></p>
 
     </div>
 
