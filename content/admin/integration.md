@@ -3,23 +3,11 @@ title: Integratie
 sort: 450
 ---
 
-<img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_index.png" />
+RoQua kent twee integratie-methoden: de HTTP API waarmee onze applicatie
+programmatisch ontsloten wordt, en de single sign-on koppelingen waarmee uw
+gebruikers in RoQua kunnen inloggen zonder handmatige authenticatie.
 
-## Aanmaken
-
-Vul onder "naam van de applicatie" een identificerende naam in. De naam van de applicatie geldt in de API als de `consumer_key`. Bij IP-filter kunnen één of meerdere IP-adressen of IP-ranges worden opgegeven. Voor API-requests wordt dit IP-filter opgelegd op het afzend-adres van het HTTP-request. Bij SSO-koppelingen legt het IP-filter een beperking op voor geldige IP-adressen die mogen inloggen.
-
-Daarnaast moet voor elke token worden aangegeven wat de acties zijn die met die sleutel gedaan mogen worden. Dit gaat met de vinkjes onder "Rechten". De tekst bij elk vinkje linkt naar de documentatie van het betreffende recht.
-
-<img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_new.png" />
-
-Na aanmaken wordt de `consumer_secret` **eenmalig** getoond. Beschouw dit als een wachtwoord, en stuur het dus nooit onversleuteld naar collega's. In de ideale werkwijze wordt de code rechstreeks vanuit RoQua naar de configuratie van het doelsysteem gekopieerd.
-
-<img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_created.png" />
-
-## Intrekken
-
-Om te zorgen dat een token niet langer toegang heeft tot RoQua kan deze worden ingetrokken. Ingetrokken tokens blijven staan in het overzicht.
-
-<img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_revoked.png" />
-
+Beide koppelingen hebben het concept van een "token". Voor de API-tokens is dat
+waarmee uw applicatie zich authenticeerd bij onze service. Voor SSO-tokens wordt
+de consumer_secret gebruikt om de login-URL te ondertekenen, zodat onze
+applicatie kan controleren dat het een geldige login betreft.
