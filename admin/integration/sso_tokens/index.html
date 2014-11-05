@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Data Exports | RoQua Developer Docs</title>
+  <title>Single sign-on tokens | RoQua Developer Docs</title>
   <link href="/rom_manual/assets/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -39,7 +39,7 @@
   <div class="sub-nav">
     <h2>
       <strong>Admin</strong>
-      : Data Exports
+      : Single sign-on tokens
       <span class="status status-draft">
           draft
           </span>
@@ -48,15 +48,25 @@
 
   <div id="wrapper">
     <div class="content">
-      <p>De links onder de header “Bestand” geven toegang tot de meest recent gegenereerde dataexport. Deze export wordt ‘s nachts aangemaakt en bevat daarom alle vragenlijsten die ingevuld werden vóór afgelopen middernacht. De codeboeken kun je in het gedownloade bestand onder de submap “codebooks” terugvinden.</p>
+      <p><img src="/rom_manual/assets/images/screenshots/admin_sso_tokens_index.png"></p>
 
-<p><img src="/rom_manual/assets/images/screenshots/dataexport.png"></p>
+<h2 id="aanmaken">Aanmaken</h2>
 
-<ul class="hints">
-  <li>Er worden verschillende formaten bijgehouden van de dataexport. Als je onthoudt wat de naam en sleutel was van het formaat wat je hebt gedownload, kun je later nieuwe data in hetzelfde formaat downloaden. Formaten worden één jaar lang ondersteund. Daarna wordt er geen dataexport meer voor gegenereerd.</li>
-  <li>Alle exportformaten bevatten de meest recente data. Alleen de indeling van kolommen in een exportbestand verschilt tussen de exportformaten.</li>
-  <li>Om te zien wat het verschil is tussen een ouder exportformaat en het meest recente formaat kun je op de link "Verschillen bekijken" klikken. Dit kan helpen bij de overgang van een oud (niet meer ondersteund) formaat naar het meest recente exportformaat.</li>
-</ul>
+<p>Vul onder “consumer_key” een identificerende naam in. Bij IP-filter kunnen één of meerdere IP-adressen of IP-ranges worden opgegeven. Voor API-requests wordt dit IP-filter opgelegd op het afzend-adres van het HTTP-request. Bij SSO-koppelingen legt het IP-filter een beperking op voor geldige IP-adressen die mogen inloggen.</p>
+
+<p>Daarnaast moet voor elke token worden aangegeven wat de acties zijn die met die sleutel gedaan mogen worden. Dit gaat met de vinkjes onder “Rechten”. De tekst bij elk vinkje linkt naar de documentatie van het betreffende recht.</p>
+
+<p><img src="/rom_manual/assets/images/screenshots/admin_sso_tokens_new.png"></p>
+
+<p>Na aanmaken wordt de <code>consumer_secret</code> <strong>eenmalig</strong> getoond. Beschouw dit als een wachtwoord, en stuur het dus nooit onversleuteld naar collega’s. In de ideale werkwijze wordt de code rechstreeks vanuit RoQua naar de configuratie van het doelsysteem gekopieerd.</p>
+
+<p><img src="/rom_manual/assets/images/screenshots/admin_sso_tokens_created.png"></p>
+
+<h2 id="intrekken">Intrekken</h2>
+
+<p>Om te zorgen dat een token niet langer toegang heeft tot RoQua kan deze worden ingetrokken. Ingetrokken tokens blijven staan in het overzicht.</p>
+
+<p><img src="/rom_manual/assets/images/screenshots/admin_sso_tokens_revoked.png"></p>
 
     </div>
 

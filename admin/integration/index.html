@@ -48,25 +48,14 @@
 
   <div id="wrapper">
     <div class="content">
-      <p><img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_index.png"></p>
+      <p>RoQua kent twee integratie-methoden: de HTTP API waarmee onze applicatie
+programmatisch ontsloten wordt, en de single sign-on koppelingen waarmee uw
+gebruikers in RoQua kunnen inloggen zonder handmatige authenticatie.</p>
 
-<h2 id="aanmaken">Aanmaken</h2>
-
-<p>Vul onder “naam van de applicatie” een identificerende naam in. De naam van de applicatie geldt in de API als de <code>consumer_key</code>. Bij IP-filter kunnen één of meerdere IP-adressen of IP-ranges worden opgegeven. Voor API-requests wordt dit IP-filter opgelegd op het afzend-adres van het HTTP-request. Bij SSO-koppelingen legt het IP-filter een beperking op voor geldige IP-adressen die mogen inloggen.</p>
-
-<p>Daarnaast moet voor elke token worden aangegeven wat de acties zijn die met die sleutel gedaan mogen worden. Dit gaat met de vinkjes onder “Rechten”. De tekst bij elk vinkje linkt naar de documentatie van het betreffende recht.</p>
-
-<p><img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_new.png"></p>
-
-<p>Na aanmaken wordt de <code>consumer_secret</code> <strong>eenmalig</strong> getoond. Beschouw dit als een wachtwoord, en stuur het dus nooit onversleuteld naar collega’s. In de ideale werkwijze wordt de code rechstreeks vanuit RoQua naar de configuratie van het doelsysteem gekopieerd.</p>
-
-<p><img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_created.png"></p>
-
-<h2 id="intrekken">Intrekken</h2>
-
-<p>Om te zorgen dat een token niet langer toegang heeft tot RoQua kan deze worden ingetrokken. Ingetrokken tokens blijven staan in het overzicht.</p>
-
-<p><img src="/rom_manual/assets/images/screenshots/admin_auth_tokens_revoked.png"></p>
+<p>Beide koppelingen hebben het concept van een “token”. Voor de API-tokens is dat
+waarmee uw applicatie zich authenticeerd bij onze service. Voor SSO-tokens wordt
+de consumer_secret gebruikt om de login-URL te ondertekenen, zodat onze
+applicatie kan controleren dat het een geldige login betreft.</p>
 
     </div>
 
@@ -111,8 +100,18 @@
             
           
             
-              <li>
-                <h3><a href="/rom_manual/admin/integration/">Integratie</a></h3>
+              <li class="js-topic">
+                <h3>
+                  <a href="#" class="js-expand-btn collapsed arrow-btn" data-proofer-ignore></a>
+                  <a href="/rom_manual/admin/integration/">Integratie</a>
+                </h3>
+                <ul class="js-guides">
+                  
+                    <li><a href="/rom_manual/admin/integration/api_tokens/">API tokens</a></li>
+                  
+                    <li><a href="/rom_manual/admin/integration/sso_tokens/">Single sign-on tokens</a></li>
+                  
+                </ul>
               </li>
             
           
