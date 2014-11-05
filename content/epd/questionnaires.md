@@ -3,6 +3,11 @@ title: Klaarzetten of invullen vragenlijsten
 sort: 300
 ---
 
+* TOC
+{:toc}
+
+## Algemene werkwijze
+
 In de timeline staat het klaarzetten van vragenlijsten los van het aanmaken van uitnodigingen. Klik op de "Vragenlijsten"-knop bovenin de timeline om alle beschikbare metingen en de daaronder vallende vragenlijsten weer te geven.
 
 <img src="/rom_manual/assets/images/screenshots/dossier_quests0.png" />
@@ -61,3 +66,12 @@ Selecteer vervolgens de gewenste lijsten en klik op "Invullen". Je gaat meteen d
 </ul>
 
 <img src="/rom_manual/assets/images/screenshots/dossier_quests1b.png" />
+
+
+## Speciale gevallen
+
+### Recent ingevulde lijsten
+
+Coördinatoren kunnen bij vragenlijsten instellen hoe lang een oude, eerder ingevulde vragenlijst geldig blijft. Als dit van een vragenlijst is ingesteld, en de vragenlijst is binnen die periode ingevuld, dan staat de vragenlijst onderaan in een groepje "recent ingevulde lijsten". Waarschijnlijk is het dan niet nodig deze lijst nu te laten invullen. Hoe lang een lijst als "recent" wordt gezien verschilt per vragenlijst en soms ook per protocol.
+
+<img src="/rom_manual/assets/images/screenshots/epd_recently_answered_questionnaires.png" />
