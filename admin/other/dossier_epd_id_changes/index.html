@@ -5,7 +5,7 @@
   <meta http-equiv="Content-Language" content="en-us" />
   <meta http-equiv="imagetoolbar" content="false" />
   <meta name="MSSmartTagsPreventParsing" content="true" />
-  <title>Instellingen | RoQua Developer Docs</title>
+  <title>Dossiers omnummeren | RoQua Developer Docs</title>
   <link href="/rom_manual/assets/css/reset.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/960.css" rel="stylesheet" type="text/css" />
   <link href="/rom_manual/assets/css/uv_active4d.css" rel="stylesheet" type="text/css" />
@@ -39,7 +39,7 @@
   <div class="sub-nav">
     <h2>
       <strong>Admin</strong>
-      : Instellingen
+      : Dossiers omnummeren
       <span class="status status-draft">
           draft
           </span>
@@ -48,51 +48,25 @@
 
   <div id="wrapper">
     <div class="content">
-      <p>Hier kun je enkele instellingen maken voor de RoQua-applicatie zoals de weergave van een link naar de handleiding in de RoQua interface en of behandelaren gevraagd zullen worden om hun persoonlijke gegevens als zij voor het eerst van RoQua gebruik maken. Verder kun je opgeven na welke periode klaarstaande vragenlijsten een rood label krijgen en welk exportformaat gebruikt wordt voor het verzenden van ORU-berichten.</p>
+      <p>Af en toe komt het voor dat binnen het EPD een bestaand cliëntendossier een nieuw clientnummer gekregen heeft, of dat een cliënt per ongeluk twee dossiers had, en dat de data van beide moet worden samengevoegd.</p>
 
-<h2 id="actieve-functies">Actieve functies</h2>
+<p>In de RoQua Admin zijn deze beide acties ondergebracht onder “omnummeren”. In de Admin is tevens een overzicht van alle historische acties.</p>
 
 <div style="height: 230px; overflow: hidden">
-  <img src="/rom_manual/assets/images/screenshots/instellingen.png">
+  <img src="/rom_manual/assets/images/screenshots/admin_dossier_epd_id_changes_index.png">
 </div>
+
+<h2 id="omnummering-uitvoeren">Omnummering uitvoeren</h2>
 
 <ul>
   <li>
-<strong>Invulperiode</strong> geeft aan na hoeveel tijd de labels van klaarstaande vragenlijsten rood zullen worden. Dit is ter attentie voor medewerkers, maar hangen verder geen consequenties aan.</li>
+<strong>Vervallen</strong> is het oude nummer, dat niet meer in gebruik is.</li>
   <li>
-<strong>Cache-tijd NAW</strong> geeft aan hoe lang RoQua de NAW-gegevens die worden opgehaald via een A19-koppeling zelf bewaart. Gegevens die we altijd behouden zijn postcode, geboortedatum en geslacht (voor onderzoek), en mobiele telefoonnummer en e-mailadres (voor automatische protocollen).</li>
+<strong>Nieuw</strong> is het cliëntnummer waarheen alle data moet worden overgezet.</li>
+  <li>Wanneer het nieuwe nummer van een dossier reeds bestaat, wordt eerst om bevestiging van samenvoegen gevraagd. Dit gele blok verschijnt na de eerste klik op "Dossiernummerwijziging aanmaken", maar alleen wanneer het nieuwe nummer al bekend is.</li>
 </ul>
 
-<h2 id="migreren-oru-koppeling">Migreren ORU-koppeling</h2>
-
-<p>Voer de volgende stappen uit voor het migreren van de ORU-koppeling naar het meest recente exportformaat:</p>
-
-<ol>
-  <li>
-    Selecteer op de RoQua <strong>acceptatieomgeving</strong> het meest recente exportformaat als ORU-versie.
-    <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png">
-    </div>
-  </li>
-  <li>Controleer of dit exportformaat ook op de RoQua productieomgeving bestaat door de sleutel te vergelijken (het rijtje tekens tussen haakjes). Wanneer het formaat niet op productie bestaat, kies je een oudere versie die wel op acceptatie én productie bestaat.</li>
-  <li>Klik op "Instellingen opslaan" op de RoQua <strong>acceptatieomgeving</strong>.</li>
-  <li>
-    Klik vervolgens op de "Genereer schema" knop om voor alle vragenlijsten een leeg ORU-bericht te   verzenden.
-    <div style="height: 85px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -340px" src="/rom_manual/assets/images/screenshots/instellingen.png">
-    </div>
-  </li>
-  <li>Gebruik de verzonden ORU-berichten om de database schema's bij te werken op de communicatieserver van je organisatie.</li>
-  <li>Controleer of de schema-wijzigingen succesvol zijn doorgevoerd door nogmaals voor alle vragenlijsten lege ORU-berichten te verzenden.</li>
-  <li>
-    Selecteer op de RoQua <strong>productieomgeving</strong> het exportformaat met dezelfde sleutel (het rijtje tekens tussen haakjes) als het formaat wat geselecteerd is op de acceptatieomgeving en klik op "Instellingen opslaan".
-    <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png">
-    </div>
-  </li>
-</ol>
-
-<p>De ORU-koppeling is succesvol gemigreerd!</p>
+<p><img src="/rom_manual/assets/images/screenshots/admin_dossier_epd_id_changes_merge_confirmation.png"></p>
 
     </div>
 
