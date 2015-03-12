@@ -14,6 +14,8 @@ Met behulp van deze interface kun je de RoQua gebruikersaccounts beheren. Deze a
 
 Je kunt nu de persoonlijke gegevens bijwerken, een nieuw wachtwoord instellen of de rechten van een account beheren. De rol "Behandelaar" is een rol die elke medewerker standaard toegekend krijgt. Door de rol "Coördinator" te selecteren, geef je een gebruiker toegang tot superuser functionaliteit in de RoQua EPD-interface (zie de subsectie "Superuser Functionaliteit" hieronder). Kies je de rol "Manager", dan geef je een gebruiker toegang tot de RoQua admin-interface. Je kunt bepalen welke tabs een gebruiker te zien krijgt door deze onder "Rechten" aan te vinken.
 
+Het bovenste recht 'Gebruikersrechten toekennen + alle andere rechten' is een bijzonder recht dat alleen door RoQua support kan worden uitgedeeld. Het intrekken (uitvinken) van dit recht kan echter door elke gebruiker worden gedaan die gebruikersrechten mag toekennen. Dit maakt het mogelijk om (bijvoorbeeld vertrekkende) werknemers dit recht te ontnemen. Dit recht geeft een gebruiker naast alle andere bestaande rechten ook alle toekomstige rechten die ooit nog aan RoQua worden toegevoegd.
+
 <img src="/rom_manual/assets/images/screenshots/gebruikers2.png" />
 
 ## Superuser Functionaliteit in de RoQua EPD Interface
