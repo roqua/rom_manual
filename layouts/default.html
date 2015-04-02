@@ -46,7 +46,6 @@
           <%
             compiled_content = @item.rep_named(:default).instance_eval { @content[:pre] }
             doc = Nokogiri::HTML(compiled_content)
-            # binding.pry if @item.identifier == '/epd/'
             @toc = ""
           %>
           <%= toc_for @item %>

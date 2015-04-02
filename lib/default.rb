@@ -93,6 +93,9 @@ module Nanoc::RoquaTools::Filters
             sibling.unlink
             section.add_child(sibling)
           end
+
+          binding.pry
+          puts section.inspect
         end
       end
 

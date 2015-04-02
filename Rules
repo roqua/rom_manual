@@ -24,10 +24,18 @@ end
 compile '/CNAME/' do
 end
 
-compile '*' do
+compile '/epd/' do
   filter :erb
   filter :kramdown, input: 'GFM', hard_wrap: false
   filter :roqua_sectionize
+  filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
+  layout item[:layout] || 'default'
+end
+
+compile '*' do
+  filter :erb
+  filter :kramdown, input: 'GFM', hard_wrap: false
+  # filter :roqua_sectionize
   filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
   layout item[:layout] || 'default'
 end
