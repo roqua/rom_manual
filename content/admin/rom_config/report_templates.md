@@ -7,7 +7,7 @@ Hier kun je de templates die gebruikt worden voor het genereren van rapporten aa
 
 Klik op de knop "Maak een nieuwe rapporttemplate" om een nieuwe template toe te voegen.
 
-<img src="/rom_manual/assets/images/screenshots/reports.png" />
+<img src="/assets/images/screenshots/reports.png" />
 
 <ul class="hints">
   <li>Klik op de knop "Bewerk" om een bestaande template aan te passen.</li>
@@ -21,7 +21,7 @@ Door een tijdspanne op te geven wordt bij het genereren van een rapport automati
 
 Vervolgens kunnen de vragenlijsten waar een template betrekking op heeft worden aangevinkt. Het rapport kan dan enkel outcome weergeven voor de vragenlijsten die hier zijn opgegeven.
 
-<img src="/rom_manual/assets/images/screenshots/reports_new.png" />
+<img src="/assets/images/screenshots/reports_new.png" />
 
 Klik op de knop "Rapporttemplate Aanmaken" om over te gaan op het definiëren van de inhoud van de template.
 
@@ -29,7 +29,7 @@ Een rapport kan grafieken en tabellen met berekende schaalscores of de beantwoor
 
 Klik op Rapporttemplate Updaten om de wijzigingen op te slaan. Deze worden onmiddellijk van kracht.
 
-<img src="/rom_manual/assets/images/screenshots/reports_update.png" />
+<img src="/assets/images/screenshots/reports_update.png" />
 
 <ul class="hints">
   <li>Klik op het "Aanpassen" linkje om de selectie van vragenlijsten gebruikte alsnog aan te passen.</li>
@@ -38,7 +38,7 @@ Klik op Rapporttemplate Updaten om de wijzigingen op te slaan. Deze worden onmid
 
 Na het updaten van een template verschijnt een voorbeeld rapport. Hier kun je zien of de template naar wens is aangepast. Klik op de knop "Bekijk als formulier" voor een formulierweergave van het rapport.
 
-<img src="/rom_manual/assets/images/screenshots/reports_view.png" />
+<img src="/assets/images/screenshots/reports_view.png" />
 
 <ul class="hints">
   <li>Let op eventuele "Liquid errors" in het voorbeeld. Deze wijzen er op dat er fouten zitten in de template.</li>

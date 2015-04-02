@@ -8,7 +8,7 @@ Af en toe komt het voor dat binnen het EPD een bestaand cliëntendossier een nie
 In de RoQua Admin zijn deze beide acties ondergebracht onder "omnummeren". In de Admin is tevens een overzicht van alle historische acties.
 
 <div style="height: 230px; overflow: hidden">
-  <img src="/rom_manual/assets/images/screenshots/admin_dossier_epd_id_changes_index.png" />
+  <img src="/assets/images/screenshots/admin_dossier_epd_id_changes_index.png" />
 </div>
 
 ## Omnummering uitvoeren
@@ -20,4 +20,4 @@ In de RoQua Admin zijn deze beide acties ondergebracht onder "omnummeren". In de
   <li>Wanneer het nieuwe nummer van een dossier reeds bestaat, wordt eerst om bevestiging van samenvoegen gevraagd. Dit gele blok verschijnt na de eerste klik op "Dossiernummerwijziging aanmaken", maar alleen wanneer het nieuwe nummer al bekend is.</li>
 </ul>
 
-<img src="/rom_manual/assets/images/screenshots/admin_dossier_epd_id_changes_merge_confirmation.png" />
+<img src="/assets/images/screenshots/admin_dossier_epd_id_changes_merge_confirmation.png" />

@@ -10,12 +10,15 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-# Reset search-index by deleting it every time
-preprocess do
-  File.delete("output/search-index.json") if File.exists?("output/search-index.json")
+compile '/assets/*' do
 end
 
-compile '/rom_manual/assets/*' do
+compile %r{stylesheets/[^_].*} do
+  filter :sass, syntax: :scss
+end
+
+# Don't filter partials
+compile %r{stylesheets/_.*} do
 end
 
 compile '/CNAME/' do
@@ -24,14 +27,16 @@ end
 compile '*' do
   filter :erb
   filter :kramdown, :toc_levels => [2,3], input: 'GFM', hard_wrap: false
-  filter :colorize_syntax,
-    :colorizers => {:javascript => :pygmentsrb}
+  filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
   layout item[:layout] || 'default'
 end
 
-route '/rom_manual/assets/*' do
+route '/stylesheets/*/' do
+  item.identifier.chop + '.css'
+end
+
+route '/assets/*' do
   item.identifier.chop
-  # item.identifier[7..-2]
 end
 
 route '/CNAME/' do

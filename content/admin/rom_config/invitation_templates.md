@@ -5,7 +5,7 @@ sort: 100
 
 Hier kun je de templates die gebruikt worden voor het uitnodigen van een patiënt of andere respondent aanpassen.
 
-<img src="/rom_manual/assets/images/screenshots/uitnodigingen.png" />
+<img src="/assets/images/screenshots/uitnodigingen.png" />
 
 <ul class="hints">
   <li>Klik op de naam van een uitnodiging om te kijken hoe deze er uit komt te zien.</li>
@@ -18,7 +18,7 @@ Bij het aanmaken van een nieuwe template dien je ten minste de volgende velden i
 
 Vervolgens kun je de standaard-tekst voor de uitnodiging opgeven. Je kunt gebruik maken van template-variabelen voor bijvoorbeeld de aanspreking en de naam van de patiënt. Zie hiervoor de tekst onder de hoofding "Hulp bij template" en de reeds bestaande uitnodigingen.
 
-<img src="/rom_manual/assets/images/screenshots/uitnodigingen2.png" />
+<img src="/assets/images/screenshots/uitnodigingen2.png" />
 
 <ul class="hints">
   <li>Door een protocol de specificeren bij een template komt deze alleen voor dat protocol beschikbaar.</li>

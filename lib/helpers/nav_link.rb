@@ -28,11 +28,11 @@ class NavLinker
   def html_class_for(item)
     html_classes = []
 
-    if item.identifier == '/rom_manual/'
+    if item.identifier == '/'
       html_classes << 'home'
     end
 
-    if @item == item || (item.identifier != '/rom_manual/' && @item.identifier.start_with?(item.identifier))
+    if @item == item || (item.identifier != '/' && @item.identifier.start_with?(item.identifier))
       html_classes << 'active'
     end
 

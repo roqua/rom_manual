@@ -61,10 +61,9 @@ module GitHub
 
       def screenshot(name)
         %(<div class="screenshot">
-            <img src="/rom_manual/assets/images/screenshots/#{name}.png" />
+            <img src="/assets/images/screenshots/#{name}.png" />
           </div>)
       end
-
 
       def strftime(time, format = DefaultTimeFormat)
         attribute_to_time(time).strftime(format)

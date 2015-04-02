@@ -11,7 +11,7 @@ Wanneer je RoQua voor het eerst opent vanuit het EPD, wordt je gevraagd je perso
 </ul>
 
 Voer je gegevens in en klik op "Medewerker Updaten".
-<img src="/rom_manual/assets/images/screenshots/eerste_gebruik_1.png" />
+<img src="/assets/images/screenshots/eerste_gebruik_1.png" />
 
 <ul class="hints">
   <li> Je kunt je gegevens later nog bijwerken door op het <%= icon "preferences_icon" %>-icoontje te klikken linksonder in de RoQua interface.</li>
@@ -25,4 +25,4 @@ Vervolgens wordt je gevraagd de afdeling te selecteren waarin je werkzaam bent. 
   <li> Op sommige locaties wordt de drop-down box voor het selecteren van een afdeling niet weergegeven. Het selecteren van een afdeling is dan niet nodig.</li>
 </ul>
 
-<img src="/rom_manual/assets/images/screenshots/eerste_gebruik_2.png" />
+<img src="/assets/images/screenshots/eerste_gebruik_2.png" />

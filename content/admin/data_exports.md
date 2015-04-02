@@ -5,7 +5,7 @@ sort: 300
 
 De links onder de header "Bestand" geven toegang tot de meest recent gegenereerde dataexport. Deze export wordt 's nachts aangemaakt en bevat daarom alle vragenlijsten die ingevuld werden vóór afgelopen middernacht. De codeboeken kun je in het gedownloade bestand onder de submap "codebooks" terugvinden.
 
-<img src="/rom_manual/assets/images/screenshots/dataexport.png" />
+<img src="/assets/images/screenshots/dataexport.png" />
 
 <ul class="hints">
   <li>Er worden verschillende formaten bijgehouden van de dataexport. Als je onthoudt wat de naam en sleutel was van het formaat wat je hebt gedownload, kun je later nieuwe data in hetzelfde formaat downloaden. Formaten worden één jaar lang ondersteund. Daarna wordt er geen dataexport meer voor gegenereerd.</li>

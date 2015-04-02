@@ -9,7 +9,7 @@ Soms worden klaargezette vragenlijsten niet ingevuld door een patiënt of wordt 
 
 Wanneer je op het kruisje naast de naam van een klaarstaande vragenlijst klikt, verschijnt een scherm waarin je de reden non-respons kunt aangeven.
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests6.png" />
+<img src="/assets/images/screenshots/dossier_quests6.png" />
 
 <ul class="hints">
   <li> Wanneer je rechts op de knop "Verwijder Alle" klikt, wordt de opgegeven "reden non-respons" aan alle verwijderde vragenlijsten geassocieerd.</li>
@@ -21,7 +21,7 @@ Kies een bijpassende reden en klik op "Ok" om deze op te slaan.
   <li> Wanneer je de optie "Geen non-respons registreren." geselecteerd laat staan en op "Ok" klikt, wordt de klaarstaande vragenlijst verwijderd zonder een reden op te slaan.</li>
 </ul>
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests7.png" />
+<img src="/assets/images/screenshots/dossier_quests7.png" />
 
 ### Non-Respons Automatische Protocollen
 
@@ -31,11 +31,11 @@ Wanneer een set vragenlijsten klaargezet is door een automatisch protocol (zie o
 
 Wanneer een patiënt niet werd benaderd voor een ROM meting, gaat het registreren van de reden non-respons als volgt: klik op de "Vragenlijsten"-knop bovenaan de timeline.
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests9.png" />
+<img src="/assets/images/screenshots/dossier_quests9.png" />
 
 Selecteer de gemiste ROM meting.
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests1.png" />
+<img src="/assets/images/screenshots/dossier_quests1.png" />
 
 Selecteer de vragenlijsten waarvoor een reden non-respons geregistreerd dient te worden en klik onderaan op de knop "Non-Respons".
 
@@ -43,7 +43,7 @@ Selecteer de vragenlijsten waarvoor een reden non-respons geregistreerd dient te
   <li> Selecteer het tabje van een andere respondent wanneer het bijvoorbeeld om ouder of leerkrachtlijsten gaat.</li>
 </ul>
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests8.png" />
+<img src="/assets/images/screenshots/dossier_quests8.png" />
 
 Selecteer de reden voor non-respons en klik op "Opslaan".
 
@@ -51,4 +51,4 @@ Selecteer de reden voor non-respons en klik op "Opslaan".
   <li> Wanneer de non-respons gaat over een meting uit het verleden, kan de datum van non-respons opgegeven worden onder het kopje "Datum Meting".</li>
 </ul>
 
-<img src="/rom_manual/assets/images/screenshots/dossier_quests10.png" />
+<img src="/assets/images/screenshots/dossier_quests10.png" />

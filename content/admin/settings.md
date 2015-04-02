@@ -8,7 +8,7 @@ Hier kun je enkele instellingen maken voor de RoQua-applicatie zoals de weergave
 ## Actieve functies
 
 <div style="height: 230px; overflow: hidden">
-  <img src="/rom_manual/assets/images/screenshots/instellingen.png" />
+  <img src="/assets/images/screenshots/instellingen.png" />
 </div>
 
 <ul>
@@ -24,7 +24,7 @@ Voer de volgende stappen uit voor het migreren van de ORU-koppeling naar het mee
   <li>
     Selecteer op de RoQua <strong>acceptatieomgeving</strong> het meest recente exportformaat als ORU-versie.
     <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png" />
+      <img style="margin-top: -210px" src="/assets/images/screenshots/instellingen.png" />
     </div>
   </li>
   <li>Controleer of dit exportformaat ook op de RoQua productieomgeving bestaat door de sleutel te vergelijken (het rijtje tekens tussen haakjes). Wanneer het formaat niet op productie bestaat, kies je een oudere versie die wel op acceptatie én productie bestaat.</li>
@@ -32,7 +32,7 @@ Voer de volgende stappen uit voor het migreren van de ORU-koppeling naar het mee
   <li>
     Klik vervolgens op de "Genereer schema" knop om voor alle vragenlijsten een leeg ORU-bericht te   verzenden.
     <div style="height: 85px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -340px" src="/rom_manual/assets/images/screenshots/instellingen.png" />
+      <img style="margin-top: -340px" src="/assets/images/screenshots/instellingen.png" />
     </div>
   </li>
   <li>Gebruik de verzonden ORU-berichten om de database schema's bij te werken op de communicatieserver van je organisatie.</li>
@@ -40,7 +40,7 @@ Voer de volgende stappen uit voor het migreren van de ORU-koppeling naar het mee
   <li>
     Selecteer op de RoQua <strong>productieomgeving</strong> het exportformaat met dezelfde sleutel (het rijtje tekens tussen haakjes) als het formaat wat geselecteerd is op de acceptatieomgeving en klik op "Instellingen opslaan".
     <div style="height: 130px; overflow: hidden; border: 1px solid #ddd">
-      <img style="margin-top: -210px" src="/rom_manual/assets/images/screenshots/instellingen.png" />
+      <img style="margin-top: -210px" src="/assets/images/screenshots/instellingen.png" />
     </div>
   </li>
 </ol>
