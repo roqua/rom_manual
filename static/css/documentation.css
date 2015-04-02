@@ -817,7 +817,6 @@ div.sidebar-module ul ul li span {
   margin: 12px 0;
 }
 
-
 .content .description {
   margin-left: 20px;
 }
@@ -1439,6 +1438,18 @@ img.icon {
   vertical-align: middle;
   margin: 0;
   max-height: 21px; /* Keep in sync with line-height */
+}
+
+.screenshot {
+  max-width: 85%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 12px auto;
+  text-align: center;
+}
+
+.screenshot img {
+  margin: 0;
 }
 
 /* @end */
