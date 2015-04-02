@@ -1,7 +1,4 @@
----
-title: Overzicht
-sort: 100
----
+# Overzicht
 
 Op deze pagina zie je een aantal statistieken over je RoQua dataset.
 

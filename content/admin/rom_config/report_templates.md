@@ -1,7 +1,4 @@
----
-title: Rapporttemplates
-sort: 200
----
+# Rapporttemplates
 
 Hier kun je de templates die gebruikt worden voor het genereren van rapporten aanpassen. Met rapporten is het mogelijk de resultaten van verschillende vragenlijsten te combineren in één document. Zo zou je bijvoorbeeld de outcome  van een vragenlijst die door verschillende respondenten ingevuld is ter vergelijking onder elkaar kunnen plaatsen. Wanneer een template eenmaal aangemaakt is, kunnen medewerker via de RoQua EPD-interface rapporten genereren voor een selectie aan ingevulde vragenlijsten.
 

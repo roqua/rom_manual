@@ -203,8 +203,6 @@ a img {
 #wrapper {
   padding: 20px 0;
   height: auto;
-  max-width: 980px;
-  margin: 0 auto;
 }
 
 #wrapper:after, #wrapper:before {
@@ -217,9 +215,8 @@ a img {
 }
 
 .content {
-  position: absolute;
-  top: 59px;
-  left: 281px;
+  position: relative;
+  margin-left: 281px;
   right: 0;
   bottom: 0;
   float: left;

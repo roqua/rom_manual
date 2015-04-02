@@ -1,7 +1,4 @@
----
-title: Gebruikers
-sort: 500
----
+# Gebruikers
 
 Met behulp van deze interface kun je de RoQua gebruikersaccounts beheren. Deze accounts worden automatisch aangemaakt op het moment dat een medewerker RoQua voor het eerst opstart. Klik op een van de "Bewerk" knoppen of typ een gebruikersnaam in het tekstveld en klik op "Zoeken" om een gebruikersaccount aan te passen.
 

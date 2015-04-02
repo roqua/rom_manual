@@ -43,33 +43,25 @@
     <div id="wrapper">
       <div id="js-sidebar" class="sidebar-shell">
         <div class="js-toggle-list sidebar-module expandable">
-          <%
-            compiled_content = @item.rep_named(:default).instance_eval { @content[:pre] }
-            doc = Nokogiri::HTML(compiled_content)
-            @toc = ""
-          %>
-          <%= toc_for @item %>
-          <ul>
-            <% @section.children.sort_by { |topic| topic[:sort] || 0 }.each do |topic| %>
-              <% if topic.children.any? %>
-                <li class="js-topic">
-                  <h3>
-                    <a href="#" class="js-expand-btn collapsed arrow-btn" data-proofer-ignore></a>
-                    <a href="<%= topic.identifier %>"><%= topic[:title] %></a>
-                  </h3>
-                  <ul class="js-guides">
-                    <% topic.children.sort_by {|guide| guide[:sort] || 0 }.each do |guide| %>
-                      <li><a href="<%= guide.identifier %>"><%= guide[:title] %></a></li>
-                    <% end %>
-                  </ul>
-                </li>
-              <% else %>
-                <li>
-                  <h3><a href="<%= topic.identifier %>"><%= topic[:title] %></a></h3>
-                </li>
-              <% end %>
-            <% end %>
-          </ul>
+          <% toc_for(@item, path: 'section').each do |category| %>
+            <li class="category <%= 'has_sections' if category[:subsections].any? %>">
+              <a href="<%= category[:link] %>"><%= category[:title] %></a>
+              <ul class="sections">
+                <% category[:subsections].each do |section| %>
+                  <li class="section <%= 'has_subsections' if section[:subsections].any? %>">
+                    <a href="<%= section[:link] %>"><%= section[:title] %></a>
+                    <ul class="subsections">
+                      <% section[:subsections].each do |subsection| %>
+                        <li class="subsection">
+                          <a href="<%= subsection[:link] %>"><%= subsection[:title] %></a>
+                        </li>
+                      <% end %>
+                    </ul>
+                  </li>
+                <% end %>
+              </ul>
+            </li>
+          <% end %>
         </div> <!-- /sidebar-module -->
         <div class="sidebar-module notice">
           <p>Deze handleiding is een <a href="https://github.com/roqua/rom_manual" target="_blank">publieke GitHub repository</a>. Help ons door de repo te forken en te verbeteren.</p>
@@ -84,9 +76,7 @@
             <%= status_label(@item) %>
           </header>
 
-          <section>
-            <%= yield %>
-          </section>
+          <%= yield %>
         </article>
 
         <div id="footer" >

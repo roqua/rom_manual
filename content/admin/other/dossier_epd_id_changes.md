@@ -1,7 +1,4 @@
----
-title: Dossiers omnummeren
-sort: 100
----
+# Dossiers omnummeren
 
 Af en toe komt het voor dat binnen het EPD een bestaand cliëntendossier een nieuw clientnummer gekregen heeft, of dat een cliënt per ongeluk twee dossiers had, en dat de data van beide moet worden samengevoegd.
 

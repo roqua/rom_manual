@@ -1,7 +1,4 @@
----
-title: Single sign-on tokens
-sort: 100
----
+# Single sign-on tokens
 
 <img src="/assets/images/screenshots/admin_sso_tokens_index.png" />
 

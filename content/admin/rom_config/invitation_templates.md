@@ -1,7 +1,4 @@
----
-title: Uitnodigingstemplates
-sort: 100
----
+# Uitnodigingstemplates
 
 Hier kun je de templates die gebruikt worden voor het uitnodigen van een patiënt of andere respondent aanpassen.
 

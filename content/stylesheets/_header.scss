@@ -2,7 +2,21 @@
      Header Styles
 ------------------------------------------------------------------------------*/
 
+/* Fix linking to anchors inside the content (would fall underneath the navbar otherwise) */
+.content *[id]:before {
+  display: block;
+  content: " ";
+  margin-top: -59px;
+  height: 59px;
+  visibility: hidden;
+}
+
 #header-wrapper {
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
   margin-bottom: 0;
   clear: both;
   height: 59px;

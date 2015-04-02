@@ -18,24 +18,25 @@ compile %r{stylesheets/[^_].*} do
 end
 
 # Don't filter partials
-compile %r{stylesheets/_.*} do
-end
+compile %r{stylesheets/_.*} do; end
+compile '/CNAME/' do; end
 
-compile '/CNAME/' do
-end
-
-compile '/epd/' do
+compile '/admin/*/' do
   filter :erb
   filter :kramdown, input: 'GFM', hard_wrap: false
-  filter :roqua_sectionize
   filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
-  layout item[:layout] || 'default'
+end
+
+compile '/epd/*/' do
+  filter :erb
+  filter :kramdown, input: 'GFM', hard_wrap: false
+  filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
 end
 
 compile '*' do
   filter :erb
   filter :kramdown, input: 'GFM', hard_wrap: false
-  # filter :roqua_sectionize
+  filter :add_sections
   filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
   layout item[:layout] || 'default'
 end

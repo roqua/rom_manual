@@ -1,7 +1,4 @@
----
-title: Data Exports
-sort: 300
----
+# Data Exports
 
 De links onder de header "Bestand" geven toegang tot de meest recent gegenereerde dataexport. Deze export wordt 's nachts aangemaakt en bevat daarom alle vragenlijsten die ingevuld werden vóór afgelopen middernacht. De codeboeken kun je in het gedownloade bestand onder de submap "codebooks" terugvinden.
 

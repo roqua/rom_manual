@@ -1,7 +1,4 @@
----
-title: Integratie
-sort: 450
----
+# Integratie
 
 RoQua kent twee integratie-methoden: de HTTP API waarmee onze applicatie
 programmatisch ontsloten wordt, en de single sign-on koppelingen waarmee uw

@@ -1,7 +1,4 @@
----
-title: API tokens
-sort: 100
----
+# API tokens
 
 <img src="/assets/images/screenshots/admin_api_tokens_index.png" />
 

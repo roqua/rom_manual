@@ -3,13 +3,36 @@
 ------------------------------------------------------------------------------*/
 
 .sidebar-shell {
-  position: absolute;
-  top: 59px;
+  position: fixed;
+  top: 0;
   left: 0;
   bottom: 0;
+  padding-top: 59px;
   width: $sidebar-width;
   background: #eee;
   border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
+
+.sidebar-shell .category {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid red;
+}
+
+
+.sidebar-shell .category > a {
+  display: block;
+  padding: 14px 15px;
+}
+
+.sidebar-shell .section > a {
+  display: block;
+  padding: 14px 30px;
+}
+
+.sidebar-shell .subsection > a {
+  display: block;
+  padding: 14px 45px;
 }
 
 .sidebar-module {
