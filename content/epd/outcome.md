@@ -1,7 +1,4 @@
----
-title: Outcome
-sort: 800
----
+# Outcome
 
 Aan de hand van de ingevulde vragenlijsten wordt "outcome" gegenereerd. Klik op het <%= icon "outcome_icon" %>-icoontje om deze "outcome" in te kijken. Links in het scherm staan alle ingevulde vragenlijsten. Het tabje "Schalen" geeft de berekende schaalscores met de bijbehorende antwoorden per meetmoment weer voor de geselecteerde lijst.
 

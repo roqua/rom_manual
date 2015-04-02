@@ -1,7 +1,4 @@
----
-title: Rapporten
-sort: 700
----
+# Rapporten
 
 De knop "Rapporten" bovenaan de timeline geeft toegang tot de rapportage functionaliteit van RoQua. Hiermee is het mogelijk om de gegeven antwoorden of een tabel of grafiek van de berekende schaalscores voor verschillende vragenlijsten in één document te combineren. Dit document kan vervolgens afgedrukt of gedownload worden voor communicatie met collega's en patiënten of voor het bespreken van patiënten in teamverband. De Phamous brief aan de huisarts is een voorbeeld van een dergelijk document.
 

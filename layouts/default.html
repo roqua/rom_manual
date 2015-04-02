@@ -43,6 +43,13 @@
     <div id="wrapper">
       <div id="js-sidebar" class="sidebar-shell">
         <div class="js-toggle-list sidebar-module expandable">
+          <%
+            compiled_content = @item.rep_named(:default).instance_eval { @content[:pre] }
+            doc = Nokogiri::HTML(compiled_content)
+            # binding.pry if @item.identifier == '/epd/'
+            @toc = ""
+          %>
+          <%= toc_for @item %>
           <ul>
             <% @section.children.sort_by { |topic| topic[:sort] || 0 }.each do |topic| %>
               <% if topic.children.any? %>
@@ -71,17 +78,17 @@
       </div><!-- /sidebar-shell -->
 
       <div class="content">
-        <div class="content-inner">
-          <div class="sub-nav">
-            <h2>
-              <strong><%= @section[:title] %></strong>
-              <%= ": #{@item[:title]}" if @item != @section %>
-              <%= status_label(@item) %>
-            </h2>
-          </div>
+        <article class="content-inner">
+          <header>
+            <strong><%= @section[:title] %></strong>
+            <%= ": #{@item[:title]}" if @item != @section %>
+            <%= status_label(@item) %>
+          </header>
 
-          <%= yield %>
-        </div>
+          <section>
+            <%= yield %>
+          </section>
+        </article>
 
         <div id="footer" >
           <div class="lower_footer">

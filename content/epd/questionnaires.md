@@ -1,10 +1,4 @@
----
-title: Klaarzetten of invullen vragenlijsten
-sort: 300
----
-
-* TOC
-{:toc}
+# Klaarzetten of invullen vragenlijsten
 
 ## Algemene werkwijze
 

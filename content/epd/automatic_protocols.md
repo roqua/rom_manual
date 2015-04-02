@@ -1,7 +1,4 @@
----
-title: Automatische Protocollen
-sort: 600
----
+# Automatische Protocollen
 
 De automatische protocollen zijn terug te vinden onder het <%= icon "autoprotocols_icon" %>-icoontje in de linker balk. Door een patiënt te abonneren op een dergelijk protocol worden vragenlijsten automatisch met een vast interval klaargezet en worden uitnodigingen automatisch verzonden.
 

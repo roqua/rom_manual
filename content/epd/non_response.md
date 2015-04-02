@@ -1,7 +1,4 @@
----
-title: Reden Non-Respons
-sort: 400
----
+# Reden Non-Respons
 
 Soms worden klaargezette vragenlijsten niet ingevuld door een patiënt of wordt hij of zij niet benaderd voor een ROM meting. De redenen voor deze non-respons kunnen geregistreerd worden in RoQua. Ze komen dan in de data-export terecht en kunnen aan het SBG gerapporteerd worden.
 

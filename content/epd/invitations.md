@@ -1,7 +1,4 @@
----
-title: Uitnodigingsbrieven aanmaken
-sort: 500
----
+# Uitnodigingsbrieven aanmaken
 
 Klik op de knop "Uitnodigingsbrieven" bovenaan de timeline voor een overzicht van de beschikbare uitnodigingstemplates.
 

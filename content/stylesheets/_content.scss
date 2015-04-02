@@ -1,0 +1,89 @@
+/*------------------------------------------------------------------------------
+     Subnav
+------------------------------------------------------------------------------*/
+
+article header {
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+article header, article header a {
+  color: #333;
+  font-weight: normal;
+  font-size: 22px;
+  -webkit-backface-visibility: hidden;
+  margin: 50px 0 10px 0;
+  text-decoration: none;
+}
+
+article header a {
+  z-index: 10;
+  position: relative;
+}
+
+article header .status {
+  display: inline;
+  position: relative;
+  top: -2px;
+  padding: .2em .6em .3em;
+  font-size: 60%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background-color: #999;
+  text-align: center;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: middle;
+  border-radius: .25em;
+}
+
+article header .status-draft {
+  display: none;
+  color: #fff;
+  background-color: #f90;
+}
+
+article header .status-stable {
+  color: #fff;
+  background-color: #5cb85c;
+}
+
+article header li a:hover {
+  text-decoration: none;
+}
+
+article header ul {
+  list-style: none;
+  position: absolute;
+  right: 0;
+  bottom: 8px;
+  width: 100%;
+  text-align: right;
+}
+
+article header li {
+  display: inline-block;
+}
+
+article header li a {
+  color: #767676;
+  font-size: 14px;
+  margin-left: 16px;
+  padding: 4px 2px 8px;
+}
+
+article header li:last-child a {
+  padding-right: 0;
+}
+
+article header li a.active {
+  color: #222;
+  border-bottom: 2px solid #d8d8d8;
+}
+
+article header li a:hover {
+  color: #327fc7;
+}

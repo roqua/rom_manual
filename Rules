@@ -26,7 +26,8 @@ end
 
 compile '*' do
   filter :erb
-  filter :kramdown, :toc_levels => [2,3], input: 'GFM', hard_wrap: false
+  filter :kramdown, input: 'GFM', hard_wrap: false
+  filter :roqua_sectionize
   filter :colorize_syntax, :colorizers => {:javascript => :pygmentsrb}
   layout item[:layout] || 'default'
 end

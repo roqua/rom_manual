@@ -1,7 +1,4 @@
----
-title: Eerste gebruik
-sort: 100
----
+# Eerste gebruik
 
 Wanneer je RoQua voor het eerst opent vanuit het EPD, wordt je gevraagd je persoonlijke gegevens in te vullen.
 

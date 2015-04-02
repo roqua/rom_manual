@@ -8,15 +8,15 @@
   left: 0;
   bottom: 0;
   width: $sidebar-width;
+  background: #eee;
+  border-right: 1px solid #ddd;
 }
 
 .sidebar-module {
-  border-radius: 4px;
   overflow: hidden;
   display: block;
   margin-bottom: 20px;
   font-size: 12px;
-  border: 1px solid #ddd;
 }
 
 .sidebar-module ul {
@@ -28,6 +28,7 @@
   border: 1px solid #CACACA;
   border-radius: 4px;
   line-height: 1.5em;
+  margin: 10px;
 }
 
 .sidebar-module.notice p {

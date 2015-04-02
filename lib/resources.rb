@@ -9,7 +9,7 @@ require 'csv'
 module GitHub
   module Resources
     module Helpers
-      STATUSES = {
+      STATUSES ||= {
         200 => '200 OK',
         201 => '201 Created',
         202 => '202 Accepted',
@@ -29,24 +29,7 @@ module GitHub
         502 => '502 Bad Gateway'
       }
 
-      AUTHORS = {
-        :technoweenie => '821395fe70906c8290df7f18ac4ac6cf',
-        :tclem        => '2f4861b27dc35663ed271d39f5358261',
-        :pengwynn     => '7e19cd5486b5d6dc1ef90e671ba52ae0',
-        :pezra        => 'f38112009dc16547051c8ac246cee443',
-        :rick         => 'a44d5abad6e86cff4e34d9f0839535c9',
-        :agh          => '6af915d3c6aa4ad30bbad43d8035fe10',
-        :jasonrudolph => '592e1e6f041f9a4ec51846fd82013aea',
-        :Caged        => '97c3a8eea9b7eaa9e1e93ea3cd47399f',
-        :foca         => 'd0ca2bf32bda9e9ea8c4473ffc3aaa0d',
-        :ymendel      => 'b1b1d33e0655e841d4fd8467359c58d0',
-        :mastahyeti   => '8caa0afdae1a934c30a1998472c63134',
-        :atmos        => 'a86224d72ce21cd9f5bee6784d4b06c7',
-        :kdaigle      => 'bc622cf1dc277323515fd4d7ed66ed24',
-        :gjtorikian   => 'befd819b3fced8c6bd3dba7e633dd068'
-      }
-
-      DefaultTimeFormat = "%B %-d, %Y".freeze
+      DefaultTimeFormat ||= "%B %-d, %Y".freeze
 
       def post_date(item)
         strftime item[:created_at]
