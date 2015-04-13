@@ -11,51 +11,12 @@
 
 
 <body class="rom">
-  <%= render '_header' %>
-
-  <div class="sub-nav">
-    <h2>
-      <strong><%= @section[:title] %></strong>
-      <%= ": #{@item[:title]}" if @item != @section %>
-      <%= status_label(@item) %>
-    </h2>
-  </div>
-
   <div id="wrapper">
     <div class="content">
-      <%= yield %>
+      <p>
+        We hebben al onze documentatie-sites samengevoegd en onder ons eigen domein gehost. U wordt binnen enkele seconden doorgestuurd naar <a href="http://docs.roqua.net<%= @item.identifier %>">http://docs.roqua.net<%= @item.identifier %></a>.
+      </p>
     </div>
-
-    <div id="js-sidebar" class="sidebar-shell">
-      <div class="js-toggle-list sidebar-module expandable">
-        <ul>
-          <% @section.children.sort_by { |topic| topic[:sort] || 0 }.each do |topic| %>
-            <% if topic.children.any? %>
-              <li class="js-topic">
-                <h3>
-                  <a href="#" class="js-expand-btn collapsed arrow-btn" data-proofer-ignore></a>
-                  <a href="<%= topic.identifier %>"><%= topic[:title] %></a>
-                </h3>
-                <ul class="js-guides">
-                  <% topic.children.sort_by {|guide| guide[:sort] || 0 }.each do |guide| %>
-                    <li><a href="<%= guide.identifier %>"><%= guide[:title] %></a></li>
-                  <% end %>
-                </ul>
-              </li>
-            <% else %>
-              <li>
-                <h3><a href="<%= topic.identifier %>"><%= topic[:title] %></a></h3>
-              </li>
-            <% end %>
-          <% end %>
-        </ul>
-      </div> <!-- /sidebar-module -->
-      <div class="sidebar-module notice">
-        <p>Deze handleiding is een <a href="https://github.com/roqua/rom_manual" target="_blank">publieke GitHub repository</a>. Help ons door de repo te forken en te verbeteren.</p>
-      </div>
-    </div><!-- /sidebar-shell -->
   </div><!-- #wrapper -->
-
-  <%= render '_footer' %>
 </body>
 </html>
